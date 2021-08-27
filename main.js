@@ -34,7 +34,7 @@ let detailsfood=async(id)=>{
    
     singlewrapper.innerHTML="";
     let singeldata=document.createElement("div");
-    singeldata.classList.add("col-md-4","mb-4","mx-auto");
+    singeldata.classList.add("col-md-12","mb-4","mx-auto");
     singeldata.innerHTML=`
       <div class="card">
         <img src="${maindata.strMealThumb}" height="300" class="card-img-top" alt="...">
@@ -69,7 +69,7 @@ let allfooddata=(data)=>{
                  <h5 class="card-title">${singlefood.strMeal}</h5>
                  <div class="btn-group" role="group" aria-label="Basic example">
                   <a  class="btn btn-danger" href="${singlefood.strYoutube}" target="_blank">youtube</a>
-                  <a  class="btn btn-primary" onClick="detailsfood('${singlefood.idMeal}')">Details</a>
+                  <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="detailsfood('${singlefood.idMeal}')">Details</a>
     
                  </div>
                 </div>
