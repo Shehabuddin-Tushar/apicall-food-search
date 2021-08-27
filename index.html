@@ -38,6 +38,14 @@
             Loading...
           </button>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script>
+      $(document).ready(function() {
+          $("html").on("contextmenu", function(e) {
+              return false;
+            });
+        });
+    </script>
   <script src="main.js"></script>
 </body>
 </html>
